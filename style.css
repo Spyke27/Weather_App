@@ -20,6 +20,7 @@ body{
     color: #fdfdfd;
     border-radius: 1rem;
     padding: 2rem;
+    max-width: 400px;
 }
 .form h3{
     margin-bottom: 1rem;
@@ -43,7 +44,9 @@ body{
     cursor: pointer;
     border-radius: 4px;
 }
-#weather-data{
+
+#weather-data,
+#error-message{
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
@@ -60,6 +63,9 @@ body{
 }
 #weather-data span{
     margin: 0.6rem;
+}
+#temperature {
+    font-size: 4rem;
 }
 #country{
     height: 17px;

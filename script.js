@@ -14,10 +14,21 @@ const weatherIconElement = document.querySelector("#weather-icon");
 const humidityElement = document.querySelector("#humidity span");
 const windElement = document.querySelector("#wind span");
 const weatherContainer = document.querySelector("#weather-data")
+const errorMessageContainer = document.querySelector("#error-message");
 
 //Funções
+
+const showErrorMessage = () => {
+    errorMessageContainer.classList.remove("hide");
+  };
+
 const showWeatherData =async (city) => {
     const data = await getWeatherData(city)
+
+    if (data.cod === "404") {
+        showErrorMessage();
+        return;
+    }
     
     cityElement.innerHTML = data.name;
     tempElement.innerHTML = parseInt(data.main.temp);
@@ -28,6 +39,7 @@ const showWeatherData =async (city) => {
     windElement.innerHTML = `${data.wind.speed}km/h`;
 
     weatherContainer.classList.remove("hide");
+    errorMessageContainer.classList.add("hide");
 };
 
 const getWeatherData = async (city) => {
@@ -46,3 +58,21 @@ searchBtn.addEventListener('click', (e) => {
 
     showWeatherData(city);
 })
+
+//Input funcional com Enter
+cityInput.addEventListener('keyup', (e) => {
+    if (e.code === "Enter") {
+        const city = e.target.value    
+
+        showWeatherData(city);
+    }
+});
+
+// Sugestões
+suggestionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const city = btn.getAttribute("id");
+  
+      showWeatherData(city);
+    });
+  });
