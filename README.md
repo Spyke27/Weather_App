@@ -4,16 +4,23 @@
 <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>JavaScript</li>  
+    <li>JavaScript Puro</li>  
 </ul>
 
 ## Projeto
 
-- Pequena lista de tarefas, com apenas um input e botão para adicionar o item digitado à lista.
+- Aplicação com foco em consumo de outras APIs para trazer as condições climáticas de qualquer cidade do mundo, com icones acompanhando a informação e as bandeiras dos respectivos países.
+
+## APIs Utilizadas:
+<ul>
+    <li>OpenWeatherMap - Informações do clima</li>
+    <li>CDN font-awesome - Ícones</li>
+    <li>CountryFlagsApi - Bandeiras dos Países</li>  
+</ul>
 
  ## Projeto rodando:
  
- 🔰 Link: listinhadetarefas.netlify.app
+ 🔰 Link: weathernetapp.netlify.app
 
  ## Resultado 💻
  <hr>
