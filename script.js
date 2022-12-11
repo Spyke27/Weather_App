@@ -27,6 +27,7 @@ const showWeatherData =async (city) => {
 
     if (data.cod === "404") {
         showErrorMessage();
+        weatherContainer.classList.add("hide")
         return;
     }
     
