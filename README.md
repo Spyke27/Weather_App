@@ -20,7 +20,7 @@
 
  ## Projeto rodando:
  
- 🔰 Link: <a href="https://weathernetapp.netlify.app/" target="_blank">weathernetapp.netlify.app</a>
+ 🔰 Link: <a href="https://weathernetapp.netlify.app/">weathernetapp.netlify.app</a>
 
  ## Resultado 💻
  <hr>
