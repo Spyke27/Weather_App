@@ -36,7 +36,7 @@ const showWeatherData =async (city) => {
     weatherIconElement.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     humidityElement.innerHTML = `${data.main.humidity}%`;
-    windElement.innerHTML = `${data.wind.speed}km/h`;
+    windElement.innerHTML = `${data.wind.speed} km/h`;
 
     weatherContainer.classList.remove("hide");
     errorMessageContainer.classList.add("hide");
@@ -67,12 +67,3 @@ cityInput.addEventListener('keyup', (e) => {
         showWeatherData(city);
     }
 });
-
-// Sugestões
-suggestionButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const city = btn.getAttribute("id");
-  
-      showWeatherData(city);
-    });
-  });

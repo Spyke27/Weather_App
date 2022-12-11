@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 .hide{
@@ -89,4 +90,49 @@ body{
     border-right: 1px solid #fff;
     margin: 0.6rem;
     padding: 0.6rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    color: #e3e3e3;
+    height: 70px;
+    width: 100%;
+    background-color: #5C54ED;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu span{
+    height: 5px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: #222;
+    margin-bottom: 4px;
+}
+footer{
+    height: 50px;
+    background-color: #333;
+    text-transform: uppercase;
+    color: #e3e3e3;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: #e3e3e3;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
