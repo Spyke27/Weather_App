@@ -41,7 +41,7 @@ const showWeatherData =async (city) => {
     weatherContainer.classList.remove("hide");
     errorMessageContainer.classList.add("hide");
 };
-
+    
 const getWeatherData = async (city) => {
     const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
 
