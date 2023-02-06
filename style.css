@@ -73,6 +73,7 @@ body{
 }
 #country{
     height: 17px;
+    display: none;
 }
 #description-container{
     display: flex;
